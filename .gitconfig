@@ -1,0 +1,32 @@
+[alias]
+  l = log
+  s = status -s
+  st = status
+  d = diff
+  ds = diff --staged
+  p = push
+  pull = !"git pull; git submodule foreach git pull origin master"
+  c = clone --recursive
+  co = checkout
+  ci = commit
+  cia = commit --amend
+  amend = commit --amend --reuse-message=HEAD
+  r = reset
+  rhh = reset --hard HEAD
+  br = branch
+  a = add
+  fb = "!f() { git branch -a --contains $1; }; f"
+  nicelog = log --graph --oneline --decorate
+  dm = "!git branch --merged | grep -v '\\*' | grep -v 'master' | xargs -n 1 git branch -d"
+
+[color]
+  ui = true
+
+[core]
+  editor = /usr/bin/vim
+
+[help]
+  autocorrect = 1
+
+[push]
+  default = simple
