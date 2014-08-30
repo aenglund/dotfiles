@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function update() {
-    rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" -avh --no-perms . ~;
+    rsync --exclude ".git/" --exclude ".DS_Store" --exclude ".gitignore" --exclude "bootstrap.sh" -avh --no-perms . ~;
     source ~/.profile
 }
 
