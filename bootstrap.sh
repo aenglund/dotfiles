@@ -21,3 +21,6 @@ else
     fi;
 fi;
 unset update;
+
+echo "Install Vim Bundles";
+vim +PluginInstall +qall;
