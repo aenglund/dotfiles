@@ -1,5 +1,5 @@
 [alias]
-  l = log
+  l = log --pretty=format:\"%Cgreen%h%Creset - %an, %ad%n  %s%n\"
   s = status -s
   st = status
   d = diff
