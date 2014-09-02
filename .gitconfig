@@ -1,7 +1,6 @@
 [alias]
-  l = log --pretty=format:\"%Cgreen%h%Creset - %an, %ad%n  %s%n\"
+  l = log --pretty=format:\"%C(yellow)%h%Creset - %an, %ad%n  %s%n\"
   s = status -s
-  st = status
   d = diff
   ds = diff --staged
   p = push
