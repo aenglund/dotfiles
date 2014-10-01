@@ -1,16 +1,10 @@
 #!/bin/sh 
 
 if [ -z "$1" ]; then
-  echo "usage: $0 Application [ Simulator ]"
-  echo "directory change by: . $0 Application [ Simulator ]"
+  echo "usage: $0 Application"
 else
-  base=~/Library/Application\ Support/iPhone\ Simulator/
-  apps=Applications
-  sim=*
-  if [ "$2" ]; then
-    sim=$2
-  fi
-  app=`ls -1td "$base/"$sim"/$apps/"*"/$1.app" | head -1`
+  base=~/Library/Developer/CoreSimulator/Devices
+  app=`ls -1td "$base/"*"/data/Applications/"*"/$1.app" | head -1`
   if [ -n "$app" ]; then
     dir=`dirname "$app"`
     cd "$dir" && open "$dir"
