@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>setupConstraints</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)setupConstraints
+{
+    // Local mapping
+
+    // Variable binding
+    NSDictionary *views = NSDictionaryOfVariableBindings(&lt;#...#&gt;);
+
+    // Translates autoresizing mask
+    [views enumerateKeysAndObjectsUsingBlock:^(id key, UIView *view, BOOL *stop) {
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+    }];
+
+    // Compression and hugging
+
+    NSDictionary *metrics = @{ };
+
+    // Setup constraints
+
+    self.constraintsInstalled = YES;
+}
+
+- (void)updateConstraints
+{
+    if ( !self.constraintsInstalled )
+    {
+        [self setupConstraints];
+    }
+    [super updateConstraints];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A9B98307-CDC4-4E00-8581-EBD91FE58891</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Boilerplate for setting up constraints</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Setup constraints</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

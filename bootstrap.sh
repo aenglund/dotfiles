@@ -8,6 +8,7 @@ git pull origin master;
 
 function update() {
     rsync --exclude ".git/" --exclude ".DS_Store" --exclude ".gitignore" --exclude "bootstrap.sh" -avh --no-perms . ~;
+    rsync .xcodesnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/;
     source ~/.profile
 }
 
