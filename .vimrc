@@ -68,3 +68,7 @@ set list listchars=tab:>·,trail:·
 let g:gitgutter_enabled = 0
 highlight clear SignColumn
 map <C-g> :GitGutterToggle<CR>
+
+" CocoaPods
+au BufNewFile,BufRead Podfile,*.podspec      set filetype=ruby
+
