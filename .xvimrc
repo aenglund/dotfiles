@@ -1,0 +1,11 @@
+let mapleader = ","
+
+set ignorecase
+set smartcase
+set nowrap
+set pasteboard
+set alwaysuseinputsource
+
+map <C-k> :ncounterpart<CR>
+map <C-j> :pcounterpart<CR>
+map ,qh :xhelp<CR>
