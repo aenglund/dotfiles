@@ -1,5 +1,8 @@
 # Add ~/bin to PATH
-export PATH="$HOME/bin:$PATH";
+export PATH="${HOME}/bin:${PATH}";
+
+# Add latest Swift tools to PATH
+export PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:${PATH}";
 
 # Make vim the default editor
 export EDITOR="vim";
