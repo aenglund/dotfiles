@@ -30,3 +30,7 @@
 
 [push]
   default = simple
+
+[user]
+	name = Albin Englund
+
