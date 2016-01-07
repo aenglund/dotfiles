@@ -7,8 +7,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function update() {
-    rsync --exclude ".git/" --exclude ".DS_Store" --exclude ".gitignore" --exclude "bootstrap.sh" -avh --no-perms . ~;
-    rsync .xcodesnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/;
+    rsync --exclude ".git/" --exclude ".DS_Store" --exclude ".gitignore" --exclude "xcode" --exclude "bootstrap.sh" -avh --no-perms . ~;
+    rsync xcode/CodeSnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/;
+    rsync xcode/FontAndColorThemes/* ~/Library/Developer/Xcode/UserData/FontAndColorThemes/;
     source ~/.profile
 }
 
