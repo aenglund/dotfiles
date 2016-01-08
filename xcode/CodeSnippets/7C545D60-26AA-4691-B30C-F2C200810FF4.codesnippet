@@ -3,22 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>unit</string>
+	<string>test</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)test&lt;#Name#&gt;
-{
+	<string>- (void)test&lt;#Name#&gt; {
     &lt;#statements#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7C545D60-26AA-4691-B30C-F2C200810FF4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add a test case method to a test class - Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Unit test</string>
+	<string>Test Method</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
