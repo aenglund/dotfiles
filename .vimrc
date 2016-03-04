@@ -14,6 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
 
 " End Vundle
 call vundle#end()
