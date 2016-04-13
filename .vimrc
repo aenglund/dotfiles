@@ -125,3 +125,6 @@ map <C-g> :GitGutterToggle<CR>
 " CocoaPods
 au BufNewFile,BufRead Podfile,*.podspec      set filetype=ruby
 
+" QML
+au FileType qml setlocal shiftwidth=4 tabstop=4 softtabstop=4
+
