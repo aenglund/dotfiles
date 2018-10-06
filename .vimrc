@@ -28,7 +28,7 @@ syntax on
 filetype plugin indent on
 
 " Tell vim that the background is dark
-set background=dark
+set background=light
 
 " Use solariized color scheme
 colorscheme solarized
