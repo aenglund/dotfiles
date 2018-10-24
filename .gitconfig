@@ -19,6 +19,7 @@
   dm = "!git branch --merged | grep -v '\\*' | grep -v 'master' | xargs -n 1 git branch -d"
   t = show-ref --tags
   hardclean = clean -xdf
+  smu = submodule update --recursive --remote
 
 [color]
   ui = true
