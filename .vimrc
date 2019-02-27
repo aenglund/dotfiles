@@ -17,6 +17,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mxw/vim-jsx'
 
 " End Vundle
 call vundle#end()
