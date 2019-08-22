@@ -126,6 +126,9 @@ let g:gitgutter_enabled = 0
 highlight clear SignColumn
 map <C-g> :GitGutterToggle<CR>
 
+" JSON
+let g:vim_json_syntax_conceal = 0
+
 " CocoaPods
 au BufNewFile,BufRead Podfile,*.podspec      set filetype=ruby
 
